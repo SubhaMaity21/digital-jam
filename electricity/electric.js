@@ -1,6 +1,5 @@
-require('dotenv').config();
-const apiKey = process.env.API_KEY;
-const N_key = process.env.N_KEY;
+const apiKey = 'e7c957a47fmshbb53361501347bcp1b09a2jsn09351a30b63a';
+
 
 // on page loading, hide the spline container and show the main content
 
@@ -41,7 +40,7 @@ submitBtn.addEventListener('click',()=>{
             'x-rapidapi-key': apiKey,
             'x-rapidapi-host': 'carbonsutra1.p.rapidapi.com',
             'Content-Type': 'application/x-www-form-urlencoded',
-            Authorization: `Bearer ${N_key}`
+            Authorization: `Bearer fQ98oU704xFvsnXcQLVDbpeCJHPglG1DcxiMLKfpeNEMGumlbzVf1lCI6ZBx`
         },
         body: new URLSearchParams({
             country_name: country.value,
