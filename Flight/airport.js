@@ -1,3 +1,7 @@
+require('dotenv').config();
+const apiKey = process.env.API_KEY;
+const N_key = process.env.N_KEY;
+
 // on page loading, hide the spline container and show the main content
 window.addEventListener('load', () => {
     const splineContainer = document.getElementById('spline-container');
@@ -36,7 +40,7 @@ const fetchAirports = debounce(async function(dropdownId, keywordId) {
     const options = {
         method: 'GET',
         headers: {
-            'x-rapidapi-key': 'e7c957a47fmshbb53361501347bcp1b09a2jsn09351a30b63a',
+            'x-rapidapi-key': apiKey,
             'x-rapidapi-host': 'carbonsutra1.p.rapidapi.com'
         }
     };
@@ -113,10 +117,10 @@ submitBtn.addEventListener('click', () => {
     const options = {
         method: 'POST',
         headers: {
-            'x-rapidapi-key': 'e7c957a47fmshbb53361501347bcp1b09a2jsn09351a30b63a',
+            'x-rapidapi-key': apiKey,
             'x-rapidapi-host': 'carbonsutra1.p.rapidapi.com',
             'Content-Type': 'application/x-www-form-urlencoded',
-            Authorization: 'Bearer fQ98oU704xFvsnXcQLVDbpeCJHPglG1DcxiMLKfpeNEMGumlbzVf1lCI6ZBx'
+            Authorization: `Bearer ${N_key}`
         },
         body: new URLSearchParams({
             iata_airport_from: airportCode1,
