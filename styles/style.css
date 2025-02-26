@@ -1,0 +1,127 @@
+.main{
+  margin:35px;
+  margin-left: 70px;
+  margin-bottom: 0;
+  padding: 50px;
+  padding-bottom: 0;
+  padding-top: 0;
+  width: 45%;
+}
+.image-container img{
+    
+    height: 230px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+img:hover{
+    transform: scaleX(1.1);
+    overflow: hidden;
+}
+.card{
+    padding: 40px;
+}
+
+.image-container {
+  overflow: hidden; /* Hide the overflowing part of the image */
+}
+
+.image-container img {
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.image-container:hover img {
+  transform: scale(1.1); /* Zoom in smoothly */
+}
+
+.form-body{
+    background-color: #0000007d;
+    margin-top:150px;
+    padding: 50px;
+    padding-bottom:100px;
+    border-radius: 20px;
+}
+ 
+.glowing-border {
+    border: 2px solid blue;
+    box-shadow: 0 0 20px blue;
+    animation: glow 1.5s infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      box-shadow: 0 0 5px rgb(4, 142, 180);
+    }
+    to {
+      box-shadow: 0 0 20px rgb(5, 92, 133);
+    }
+  }
+
+  .body {
+    background-image: url('./bg-for-electric.jpg');
+    background-size: cover; /* Makes the background image cover the entire element */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    height: 100vh; /* Sets the height to cover the viewport */
+    background: radial-gradient(circle, rgba(23, 22, 79, 0.878), black);
+  }
+
+  .mt-40{
+    margin-top: 25px;
+  }
+
+  .container{
+    
+    background-color: #00000048;
+    margin-top:10px;
+    padding: 50px;
+    padding-bottom:30px;
+    border-radius: 20px;
+  }
+
+  .row{
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  .scroll-lock{
+    /* overflow: hidden; */
+  }
+
+  
+
+  
+  .result {
+    opacity: 0;
+    display: none;
+  }
+   .result .card-image{
+    opacity: 0;
+    display: none;
+  } 
+  
+  .result-card{
+    opacity: 1;
+    display: flex;
+  }
+  .result-card .card-image{
+    opacity: 1;
+    display: flex;
+  }
+
+  .remove{
+    display: none;
+  }
+
+  #resultCard{
+    
+    
+    background-color: #0000007d;
+    color: #ffff;
+    margin-top: 60px;
+    padding: 20px;
+    overflow: hidden;
+  }
+
+  /* create a new tab */
